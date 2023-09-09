@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página para Pedir Disculpas</title>
+    <style>
+        body {
+            background-color: #acd311; /* Cambiando el color de fondo a verde */
+            font-family: Arial, sans-serif; /* Usando una fuente más común */
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centrando el texto en el body */
+        }
+        h3 {
+            color: #c11e1e; /* Cambiando el color del título */
+            margin-bottom: 20px; /* Agregando un margen inferior al título */
+        }
+        .centrar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Centrar verticalmente en la página */
+        }
+        #btnNo {
+            margin-top: 10px; /* Añadiendo margen superior al botón No */
+        }
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi() {
+            alert("Gracias");
+        }
+
+        function mueveElBoton() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            const newWidth = Math.random() * width;
+            const newHeight = Math.random() * height;
+
+            const btnNo = document.getElementById("btnNo");
+            btnNo.style.position = "absolute";
+            btnNo.style.left = newWidth + "px";
+            btnNo.style.top = newHeight + "px";
+        }
+
+        function mandandoalv() {
+            alert("Di que sí ALV");
+            document.getElementById("mensaje").value = ""; // Borra el contenido del campo de texto
+        }
+    </script>
+</head>
+<body>
+    <div class="centrar">
+    <img src="QUE HACES AQUI MEME.jpg" style="width: 300px;" />
+    <h3>¿Me perdonas dani?</h3>
+        <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Tí" />
+        <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="Ño" />
+        <h1>Otra Respuesta</h1>
+    <form>
+        <label for="mensaje">Escribe aqui alv:</label>
+        <input type="text" id="mensaje" name="COMENTARIO">
+        <input type="button" value="Enviar" onclick="mandandoalv()">
+    </form>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página para Pedir Disculpas</title>
+    <style>
+        body {
+            background-color: #acd311; /* Cambiando el color de fondo a verde */
+            font-family: Arial, sans-serif; /* Usando una fuente más común */
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centrando el texto en el body */
+        }
+        h3 {
+            color: #c11e1e; /* Cambiando el color del título */
+            margin-bottom: 20px; /* Agregando un margen inferior al título */
+        }
+        .centrar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Centrar verticalmente en la página */
+        }
+        #btnNo {
+            margin-top: 10px; /* Añadiendo margen superior al botón No */
+        }
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi() {
+            alert("Gracias");
+        }
+
+        function mueveElBoton() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            const newWidth = Math.random() * width;
+            const newHeight = Math.random() * height;
+
+            const btnNo = document.getElementById("btnNo");
+            btnNo.style.position = "absolute";
+            btnNo.style.left = newWidth + "px";
+            btnNo.style.top = newHeight + "px";
+        }
+
+        function mandandoalv() {
+            alert("Di que sí ALV");
+            document.getElementById("mensaje").value = ""; // Borra el contenido del campo de texto
+        }
+    </script>
+</head>
+<body>
+    <div class="centrar">
+    <img src="QUE HACES AQUI MEME.jpg" style="width: 300px;" />
+    <h3>¿Me perdonas dani?</h3>
+        <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Tí" />
+        <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="Ño" />
+        <h1>Otra Respuesta</h1>
+    <form>
+        <label for="mensaje">Escribe aqui alv:</label>
+        <input type="text" id="mensaje" name="COMENTARIO">
+        <input type="button" value="Enviar" onclick="mandandoalv()">
+    </form>
+    </div>
+</body>
+</html>
